@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/will-lucena/single-price-grid-component)
-- Live Site URL: [Live demo](https://your-live-site-url.com)
+- Live Site URL: [Live demo with github pages](https://will-lucena.github.io/single-price-grid-component/)
 
 ## My process
 
