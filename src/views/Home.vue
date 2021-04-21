@@ -1,17 +1,19 @@
 <template>
-  <div>
+  <div class="content">
     <custom-header
       :title="headerTitle"
       :subTitle="headerSubTitle"
       :description="headerDescription"
     ></custom-header>
-    <purcharse
-      :title="purcharseTitle"
-      :value="purcharseValue"
-      :frequency="purcharseFrequency"
-      :description="purcharseDescription"
-    ></purcharse>
-    <about :title="aboutTitle" :advantages="aboutReasons"></about>
+    <div class="product-section">
+      <purcharse
+        :title="purcharseTitle"
+        :value="purcharseValue"
+        :frequency="purcharseFrequency"
+        :description="purcharseDescription"
+      ></purcharse>
+      <about :title="aboutTitle" :reasons="aboutReasons"></about>
+    </div>
   </div>
 </template>
 

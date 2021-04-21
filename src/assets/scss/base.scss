@@ -1,7 +1,57 @@
 body {
-  max-width: 375px;
+  margin: 0;
   font-size: 16px;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.content {
+  max-width: 375px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+  box-shadow: 0 4px 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba($color: $primary-darker, $alpha: 0.2);
+}
+
 @media only screen and (min-width: 768px) {
+  .root {
+    height: 100vh;
+  }
+
+  .content {
+    max-width: 920px;
+  }
+
+  .card {
+    width: inherit;
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .product-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+  }
 }
